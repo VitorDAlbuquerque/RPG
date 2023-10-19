@@ -16,7 +16,7 @@ public class Main {
         batalha b = new batalha();
         int vidaplayer = j.vidap;
 
-
+        //aa
         String escolha1 = JOptionPane.showInputDialog("O que deseja fazer? \n 1. Ir para a floresta \n 2. Ir para as cavernas \n 3. Ir para a cachoeira");
 
         if (escolha1.equalsIgnoreCase("1")) {
