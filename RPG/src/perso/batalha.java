@@ -18,6 +18,8 @@ public class batalha {
     String[] opc1 = {"Lutar", "Fugir"};
     public int vidaplayer = j.vida;
     public void batalha(int escolha) {
+
+
         for (int vidamob = m.vida; vidamob > 0; ) {
             escolha = JOptionPane.showOptionDialog(null, "A vida do monstro é: " + vidamob + " Sua vida é: " + vidaplayer + " O que deseja fazer?", "Escolha", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, opc1, opc1[0]);
             if (escolha == 0) {

@@ -19,29 +19,15 @@ public class Main {
         //aa
         String escolha1 = JOptionPane.showInputDialog("O que deseja fazer? \n 1. Ir para a floresta \n 2. Ir para as cavernas \n 3. Ir para a cachoeira");
 
+        //batalha 1
+
         if (escolha1.equalsIgnoreCase("1")) {
-            int mobe = mg.levelmob(3);
+            int mobe = mg.levelmob(r.nextInt(3));
             JOptionPane.showMessageDialog(null, "Você escontra um monstro de nível: " + (mobe+1));
             int esc1 = JOptionPane.showOptionDialog(null, "O que deseja fazer?", "Escolha", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, opc1, opc1[0]);
 
             if (esc1 == 0) {
                 b.batalha(Integer.parseInt(escolha1));
-                //   for (int vidamob = m.vida; vidamob > 0;){
-                //      esc1 = JOptionPane.showOptionDialog(null, "A vida do monstro é: " +vidamob + " Sua vida é: " +j.vida+ " O que deseja fazer?" , "Escolha", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, opc1, opc1[0]);
-                //     if (esc1 == 0){
-                //        vidamob = m.vidam(r.nextInt(j.danomax) + 1);
-
-                //      if (vidaplayer <= 0){
-                //        JOptionPane.showMessageDialog(null, "Você morreu! o mob ficou com: " +vidamob +" de vida e você com: " +vidaplayer);
-                //  }
-                //if (vidamob <= 0){
-                //  JOptionPane.showMessageDialog(null, "Parabéns! Você ganhou! Você ficou com: "  + vidaplayer + " de vida");
-                //}
-                //}
-
-                //}
-                //}
-
             }
 
         }
@@ -51,16 +37,23 @@ public class Main {
       // cenario 2
         if (escolha1.equalsIgnoreCase("2")){
             int mobe = mg.levelmob(3);
+            JOptionPane.showMessageDialog(null, "Você escontra um monstro de nível: " + (mobe+1));
+            int esc1 = JOptionPane.showOptionDialog(null, "O que deseja fazer?", "Escolha", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, opc1, opc1[0]);
 
-        JOptionPane.showMessageDialog(null, "você encontoru um troll de nível: " + (mobe + 1));
-        JOptionPane.showOptionDialog(null, "O que deseja fazer?", "Escolha", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, opc1, opc1[0]);
+
+
+            b.batalha(Integer.parseInt(escolha1));
         }
 
 
         if (escolha1.equalsIgnoreCase("3")) {
 
             int mobe = mg.levelmob(3);
-            JOptionPane.showMessageDialog(null, "Você encontrou um jacaré de nivel: " +(mobe+1));
+            JOptionPane.showMessageDialog(null, "Você escontra um monstro de nível: " + (mobe+1));
+            int esc1 = JOptionPane.showOptionDialog(null, "O que deseja fazer?", "Escolha", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, opc1, opc1[0]);
+
+
+            b.batalha(Integer.parseInt(escolha1));
 
         }
 

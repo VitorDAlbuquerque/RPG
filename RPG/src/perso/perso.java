@@ -7,11 +7,18 @@ public class perso {
     public int lvl = 1;
     public int vidap;
 
+    public int xpp;
+
     public int vidap(int danom) {
         this.vida = this.vida - danom;
         return this.vida;
     }
 
+    public void lvlup (int xp) {
+        if (xp > (lvl*10)){
+            lvl +=1;
+        }
+    }
 
 }
 
